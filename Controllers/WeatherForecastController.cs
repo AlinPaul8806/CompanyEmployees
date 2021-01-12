@@ -35,7 +35,7 @@ namespace CompanyEmployees.Controllers
         public ActionResult<IEnumerable<string>> GetFromRepo()
         {
             //_repository.Company.AnyMethodFromComapnyRepositpory();
-            //_repository.Employee.AnyMethodFromEmployeeRepository();
+            // _repository.Employee.GetAllEmployees(false);
 
             return new string[] { "value1", "value2" };
         }

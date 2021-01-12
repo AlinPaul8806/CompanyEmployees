@@ -8,8 +8,8 @@ using System.Threading.Tasks;
 namespace CompanyEmployees.Controllers
 {
     [ApiController]
-    [Route("api/[employees]")]
-    public class EmployeeController : ControllerBase
+    [Route("api/employees")]
+    public class EmployeesController : ControllerBase
     {
         //fields:
         private readonly IRepositoryManager _repository;
@@ -17,7 +17,7 @@ namespace CompanyEmployees.Controllers
         private readonly ILoggerManager _logger;
 
         //constructor:
-        public EmployeeController(ILoggerManager logger, IRepositoryManager repository)
+        public EmployeesController(ILoggerManager logger, IRepositoryManager repository)
         {
             _repository = repository;
             _logger = logger;
